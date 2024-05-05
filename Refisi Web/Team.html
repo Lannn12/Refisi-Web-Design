@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link href="carousel.css" rel="stylesheet">
+    <title>Team page</title>
+</head>
+<style>
+    .team {
+    width: 100%;
+    height: 90vh;
+    background-image: url(image/bg1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.team h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 55px;
+    margin-bottom: 50px;
+}
+
+.team h1 span {
+    color: #fac031;
+    margin-left: 15px;
+    font-family: mv boli;
+}
+
+.team h1 span::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #fac031;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+
+.team .team_box {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 13%;
+}
+
+.team .team_box .profile {
+    width: calc(50% - 30px);
+    max-width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    margin: 0 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    transition: 0.4s;
+}
+
+.team .team_box .profile:hover {
+    border-radius: 20px;
+    height: 320px;
+}
+
+.team .team_box .profile img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    transition: 0.4s;
+}
+
+.team .team_box .profile:hover img {
+    border-radius: 20px;
+    margin-top: -230px;
+}
+
+.team .team_box .profile .info {
+    position: absolute;
+    text-align: center;
+    top: 25%;
+    transition: 0.4s;
+}
+
+.team .team_box .profile:hover .info {
+    top: 60%;
+}
+
+.team .team_box .profile .info .name {
+    color: #fac031;
+    margin-bottom: 15px;
+}
+
+.team .team_box .profile .info .bio {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto 10px auto;
+}
+
+.team .team_box .profile .info .team_icon i {
+    margin: 10px 5px 5px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.team .team_box .profile .info .team_icon i:hover {
+    color: #fac031;
+}
+
+@media (max-width: 768px) {
+    .team h1 {
+        font-size: 40px;
+    }
+    .team .team_box .profile {
+        width: calc(100% - 30px);
+    }
+}
+
+
+/* Media Queries for responsiveness */
+
+@media screen and (max-width: 768px) {
+    .team h1 {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+    
+    .team .team_box {
+        flex-direction: column;
+        top: 5%;
+    }
+    
+    .team .team_box .profile {
+        width: 80%;
+        margin: 20px 0;
+    }
+}
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+        <a class="navbar-brand" href="#"><span class="text-warning">Ar</span>Swing</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="About.html">About</a>
+            </li> 
+            <li class="nav-item">
+                <a class="nav-link" href="Price.html">Price</a>
+            </li> 
+            <li class="nav-item">
+                <a class="nav-link" href="Newest.html">Service</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Team.html">Team</a>
+            </li> 
+            <li class="nav-item">
+                <a class="nav-link" href="Loc.html">Loc</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Login.html" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Login</a>
+            </li>            
+            </ul>
+        </div>
+        </div>
+    </nav>
+        <!--Team-->
+        <div class="team">
+            <h1>Our<span>Team</span></h1> 
+            <div class="team_box">
+                <div class="profile">
+                    <img src="image/arlan.jpg"> 
+                    <div class="info">
+                        <h2 class="name">Swingly</h2>
+                        <p class="bio">Fakultas Ekonomi & Bisnis</p>   
+                        <div class="team_icon">
+                        <a href="https://www.instagram.com/sswingly12/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile">
+                    <img src="image/lumantow.jpg">
+                    <div class="info">
+                        <h2 class="name">Arlan</h2>
+                        <p class="bio">Fakultas Ilmu Komputer</p>
+                        <div class="team_icon">
+                            <a href="https://www.pornhub.com/" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <br><br>
+    <footer>
+        <p>&copy; 2024 Simple Web Page. All rights reserved.</p>
+    </footer></body>
+</html>

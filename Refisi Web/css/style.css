@@ -1,0 +1,126 @@
+/*jadwal */
+.jadwal {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    align-items: center;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+td {
+    text-align: center;
+}
+
+.Jadwal h1 span {
+    color: #fac031;
+    margin-right: 15px;
+    font-family: mv boli;
+}
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style for the menu container */
+.menu {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style for the menu heading */
+.menu h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.menu h1 span {
+    color: #ffdd00; /* Highlight color for the word "Services" */
+}
+
+/* Style for menu cards */
+.menu_card {
+    display: inline-block;
+    width: 300px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Style for menu images */
+.menu_image img {
+    width: 100%;
+    height: 300px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Style for menu info */
+.menu_info {
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* Style for menu titles */
+.menu_info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Style for menu descriptions */
+.menu_info p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Style for menu prices */
+.menu_info h3 {
+    font-size: 20px;
+    color: #ff6f61;
+    margin-bottom: 10px;
+}
+
+/* Style for menu icons */
+.menu_icon {
+    margin-top: 10px;
+}
+
+/* Style for star icons */
+.menu_icon i {
+    color: #ff6f61; /* Star color */
+    font-size: 16px;
+    margin-right: 2px;
+}
+
